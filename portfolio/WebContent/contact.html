@@ -23,6 +23,38 @@
             <article>
             <h2>Contact info</h2>
             <p>E-mail: <a href="mailto:joren.vanherwegen@hotmail.com">Joren.vanherwegen@hotmail.com</a></p>
+            <form id="contact_form" action="joren.vanherwegen@hotmail.com" method="post">
+				<p>
+                    <label for="naam">Naam*</label><br/>
+					<input id="naam" class="input" name="naam" type="text" value="" size="30" placeholder="Naam" required/><br/>
+				</p>
+				<p>
+					<label for="arts">Dag van afspraak*</label><br/>
+					<select id="arts" name="arts">
+                          <option value="maandag">Maandag</option>
+                          <option value="dinsdag">Dinsdag</option>
+                          <option value="woensdag">Woensdag</option>
+                          <option value="donderdag">Donderdag</option>
+                          <option value="vrijdag">Vrijdag</option>
+                    </select> <br>
+                </p>
+                <p>
+					<label for="date">Datum*</label><br>
+					<input type="date" name="date"><br>
+    			</p>
+				<p>
+					<label for="message">Onderwerp(niet verplicht)</label><br/>
+					<textarea id="message" class="input" name="message" rows="10" cols="30" placeholder="Type hier uw bericht."></textarea><br/>
+				</p>
+				
+				<p>
+				 
+                        
+				</p>
+				<p>
+				<input id="submit" type="submit" value="Verstuur"/>
+				</p>
+			</form>
             </article>
 			<aside><figure><a  href="https://www.linkedin.com/in/joren-v-277407ba/"><img src="images/linkedin.png" class="img" alt="LinkedIn - Joren Vanherwegen" id="afb"><br> LinkedIn</a></figure></aside>
         </main>
