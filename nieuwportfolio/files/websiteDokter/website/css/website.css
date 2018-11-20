@@ -1,0 +1,256 @@
+/* general */
+html{
+    background-color: #999999;
+    font-family: Helvetica, verdana, sans-serif;
+}
+html body{
+    line-height: 120%;
+    max-width:1000px;
+    width:90%;
+	margin:0 auto;
+}
+.img{
+    width: 75%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.important{
+    color: red;
+    font-weight: 700;
+    text-align: center;
+}
+.img#wachtpost{
+    float: left;
+    width: 30%;
+    margin: 0px;
+}
+
+/* banner */
+img#logo{
+    float: left;
+    max-width: 500px;
+}
+
+/* table */
+#zituren{
+    width: 80%;  
+    margin-left:auto; 
+    margin-right:auto;
+}
+#zituren tr th{
+    width: auto;
+	color:black;
+    border: 1px solid black ;
+    padding: 5px;
+    text-align: center;
+}
+#zituren tr td{
+	padding-bottom:5px;
+	color:white;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+/* nav */
+nav ul{
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+}
+nav ul li {
+    float:left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right:1px solid #bbb;
+    margin: auto;
+
+}
+nav ul li.navcontact{
+    float: right;
+    border-right: none;
+}
+nav ul li a{
+    width:100%;
+    padding: 14px 16px;
+    color: white;
+    font-size: large;
+	text-align:center;
+    text-decoration:none;
+}
+nav ul li:hover:not(#active) {
+    background-color: #202021;
+}
+#active{
+    background-color:#db3832;
+}
+
+/* main */
+main{
+    width:100%;
+    float:left;   
+	height:auto;
+	margin-top:0px;
+    margin-bottom: 10px;
+	background-color:#666666;
+}
+main article{
+	width:50%;
+    float: left;
+    padding-bottom: 15px;
+}
+main h2{
+    padding:0px 10px 0px 15px;
+    text-align: center;
+	color:white;
+	font-size:25px;
+	line-height:140%;
+}
+main h3{
+    padding:0px 10px 0px 15px;
+	color:white;
+	font-size:20px;
+	line-height:125%;
+}
+main p{
+    padding:0px 10px 10px 15px;
+	color:white;
+    font-size:14px;
+    text-align: left;
+}
+main aside{
+    width:50%;
+    float:right;
+    text-align: center;
+}
+main a{
+    text-decoration: underline;
+    color: #003791;
+    font-weight: 600;
+    
+}
+a:focus{ 
+ color: #fff; 
+ background: #202021; 
+}
+
+/* form */
+main form#contact_form{
+    text-align:center;
+}
+main form p{
+    text-align:center;
+}
+form>p{
+    padding: 0px;
+}
+#map{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+} 
+main label{
+    font-size:18px;
+    font-style: oblique;
+}
+main input{
+    margin-bottom: 7px;
+    padding:5px 15px; 
+    background:#ccc; 
+    border-radius: 5px;
+}
+main textarea{
+    margin-bottom: 7px;
+    padding:5px 15px; 
+    background:#ccc; 
+    border-radius: 5px;
+}
+
+/* footer */
+.gegevens{
+    text-align: center;
+}
+footer{
+	text-align:center;
+	clear:both;
+	font-size: 50%;
+	height:100%;
+    color: #8b9099;
+	background-color:#333;
+    width:100%;
+
+}
+footer address{
+    border-top: 2px solid #db3832;
+    font-size: 75%;
+    font-style: italic;
+    line-height: 1;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 1450px){
+    #map
+{
+    margin-left: 21%;
+}
+}
+@media only screen and (max-width: 1150px){
+    #map
+{
+    margin-left: 10%;
+}
+}
+@media only screen and (max-width: 760px) {
+    html body{
+        width: 100%;
+    }
+    main article{
+        width: 100%;   
+    }
+    main aside {
+        width: 100%;
+        float: none;
+    } 
+    .img#wachtpost{
+        width: 200px;
+        float: none;
+    }
+    main aside.img{
+        max-height: 250px;
+        max-width: 250px;
+    }
+    .img{
+        max-width: 300px
+    }
+}
+@media only screen and (max-width: 470px) {
+    nav ul li{
+        float:none;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        border: 1px solid black;
+    }
+    nav ul li a{
+        display: block;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-right: 0px;
+        padding-left: 0px;
+        border-bottom: 1px;
+        font-size: 100%;
+        
+    }  
+    h1 a{
+        clear: both;
+        float: left;
+    }
+    img#logo{
+        max-width: 100%;
+    }
+    #map{
+        margin-left: 17%;
+    } 
+ 
+}

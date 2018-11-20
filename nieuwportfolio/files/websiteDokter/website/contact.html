@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html lang="nl">
+    <head>
+        <meta charset= "UTF-8">
+        <title>Contact - Dokter Vanherwegen</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/website.css" rel="stylesheet" type="text/css">
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+		<header>
+			<a href="index.html"><img src="images/logotest.png" alt="Home - Dokter Vanherwegen" id="logo">
+            </a> 
+			<nav>
+				<ul>
+                    <li><a href="index.html">Startpagina</a></li>
+                    <li><a href="consultaties.html">Consultaties</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li class="navcontact" id="active"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="contact">
+			<h2>Contact</h2>
+			<form id="contact_form" action="mailto:admin@example.be" method="post">
+				<p>
+                    <label for="naam">Naam*</label><br/>
+					<input id="naam" class="input" name="naam" type="text" value="" size="30" placeholder="Naam" required/><br/>
+				</p>
+				<p>
+					<label for="email">Email*</label><br/>
+					<input id="email" class="input" name="email" type="email" value="" size="30" placeholder="Email" required/><br/>
+				</p>
+				<p>
+					<label for="message">Bericht*</label><br/>
+					<textarea id="message" class="input" name="message" rows="10" cols="30" placeholder="Type hier uw bericht." required></textarea><br/>
+				</p>
+				<input id="Versturen" type="submit" value="Email versturen"/>
+			</form>
+		</main>
+        <footer><address>
+            Geert Vanherwegen<br>
+            016/77.16.15<br>
+            Glabbeekestraat 55 - 3300 Tienen</address></footer>
+    </body>
+    </html>
